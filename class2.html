@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JQuery Selectors</title>
+<!--         <link rel="stylesheet" href="style.css">
+ -->    </head>
+    <body>
+        <div>Jquery Selector</div>
+        <div class="test">Jquery Selector</div>
+        <div id="test">Jquery Selector</div>
+        <button>Click me</button>
+
+    </body>
+   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('button').on('click', function() {
+          // $('div').css('backgroundColor','yellow');
+          // $('#test').css('backgroundColor','yellow');
+          // $('.test').css('backgroundColor','red');
+          $('#test, .test').css('backgroundColor','red');
+
+     
+
+        });
+
+    });
+
+    </script>
+    <!-- <script src="/js/jquery-latest.js"></script> -->
+</html>
+
