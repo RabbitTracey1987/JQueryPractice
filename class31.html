@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JQuery Selectors</title>
+<!--         <link rel="stylesheet" href="style.css">
+ -->    </head>
+    <body>
+        <div>
+          Hello World
+        </div>
+        <div>
+          <span> Nice to meet you</span>
+          Nice to meet you
+        </div>
+        <button>Click me</button>
+
+    </body>
+   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('button').on('click', function() {
+          // $('div:contains(ee)').css('backgroundColor','blue');
+          $('div:empty').css('backgroundColor','blue'); //(':empty')
+          $('div:has(span)').css('backgroundColor','red'); //(':has()')
+          $('div:parent').css('backgroundColor','purple'); //(':parent')
+
+
+        });
+
+    });
+
+    </script>
+    <!-- <script src="/js/jquery-latest.js"></script> -->
+</html>
+
